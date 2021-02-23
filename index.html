@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ano Sushi Style Guide</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__brand">
+          <h2 class="brand__text">Ano Sushi</h2>
+        </div>
+        <div class="nav__pages">
+          <a href="./" class="nav__link active">Style Guide</a>
+          <a href="./product.html" class="nav__link">Product</a>
+          <a href="./checkout.html" class="nav__link">Cart</a>
+          <svg viewBox="64 64 896 896" focusable="false" class="icon">
+            <path
+              d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z"
+            />
+          </svg>
+        </div>
+        <div class="hamburger-menu">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="style-guide">
+      <aside>
+        <nav class="side-nav">
+          <span class="side-nav__heading">—Components—</span>
+          <a href="#typography" class="side-nav__link">Typography</a>
+          <a href="#links" class="side-nav__link">Links</a>
+          <a href="#buttons" class="side-nav__link">Buttons</a>
+          <a href="#forms" class="side-nav__link">Forms</a>
+          <a href="#images" class="side-nav__link">Images</a>
+          <a href="#lists" class="side-nav__link">Lists</a>
+          <a href="#navigation" class="side-nav__link">Navigation</a>
+          <a href="#product" class="side-nav__link">Product Listing</a>
+          <a href="#payment" class="side-nav__link">Payment Form</a>
+          <a href="#checkout" class="side-nav__link">Checkout Cart</a>
+          <a href="#footer" class="side-nav__link">Footer</a>
+          <a href="#branding" class="side-nav__link">Branding</a>
+          <span class="side-nav__heading">—Templates—</span>
+          <a href="./product.html" class="side-nav__link">Products</a>
+          <a href="./checkout.html" class="side-nav__link">Cart</a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <section id="typography">
+          <h1 class="title">Typography</h1>
+          <h1>Header Level 1</h1>
+          <h2>Header Level 2</h2>
+          <h3>Header Level 3</h3>
+          <h4>Header Level 4</h4>
+          <p>
+            Paragraph text looks like this. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed non pretium arcu. Suspendisse
+            tristique sodales quam, sit amet commodo dolor congue eu. Nam quis
+            gravida arcu. Etiam gravida odio eget gravida efficitur.
+          </p>
+          <sub>Subscript text looks like this.</sub>
+          <pre class="code-block">
+            <code>
+&lt;h1 class=&quot;title&quot;&gt;Typography&lt;/h1&gt;
+&lt;h1&gt;Header Level 1&lt;/h1&gt;
+&lt;h2&gt;Header Level 2&lt;/h2&gt;
+&lt;h3&gt;Header Level 3&lt;/h3&gt;
+&lt;h4&gt;Header Level 4&lt;/h4&gt;
+&lt;p&gt;
+  Paragraph text looks like this. Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Sed non pretium arcu. Suspendisse
+  tristique sodales quam, sit amet commodo dolor congue eu. Nam quis
+  gravida arcu. Etiam gravida odio eget gravida efficitur.
+&lt;/p&gt;
+&lt;sub&gt;Subscript text looks like this.&lt;/sub&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="links">
+          <h1 class="title">Links</h1>
+          <a href="#" class="link">This is a link</a>
+          <pre class="code-block">
+            <code>
+&lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;This is a link&lt;/a&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="buttons">
+          <h1 class="title">Buttons</h1>
+          <button type="submit" class="btn btn-submit">submit</button>
+          <button type="reset" class="btn btn-reset">reset</button>
+          <pre class="code-block">
+            <code>
+&lt;button type=&quot;submit&quot; class=&quot;btn btn-submit&quot;&gt;submit&lt;/button&gt;
+&lt;button type=&quot;reset&quot; class=&quot;btn btn-reset&quot;&gt;reset&lt;/button&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="forms">
+          <h1 class="title">Forms</h1>
+          <form>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="text-input"
+                placeholder="Ex. raymonde@sfu.ca"
+              />
+            </div>
+            <br />
+            <div class="mt-1">
+              <label for="pickup">Pick up</label>
+              <input type="radio" name="collection-method" id="pickup" />
+              <label for="delivery">Delivery</label>
+              <input type="radio" id="delivery" name="collection-method" />
+            </div>
+          </form>
+          <pre class="code-block">
+            <code>
+&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+    &lt;input
+      type=&quot;text&quot;
+      id=&quot;email&quot;
+      class=&quot;text-input&quot;
+      placeholder=&quot;Ex. raymonde@sfu.ca&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;br /&gt;
+  &lt;div class=&quot;mt-1&quot;&gt;
+    &lt;label for=&quot;pickup&quot;&gt;Pick up&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;collection-method&quot; id=&quot;pickup&quot; /&gt;
+    &lt;label for=&quot;delivery&quot;&gt;Delivery&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;delivery&quot; name=&quot;collection-method&quot; /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="lists">
+          <h1 class="title">Lists</h1>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+          <pre class="code-block">
+            <code>
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="navigation">
+          <h1 class="title">Main Navigation</h1>
+          <nav class="nav">
+            <div class="nav__brand">
+              <h2 class="brand__text">Ano Sushi</h2>
+            </div>
+            <div class="nav__pages">
+              <a href="#" class="nav__link active">Home</a>
+              <a href="#" class="nav__link">Menu</a>
+              <a href="#" class="nav__link">About</a>
+            </div>
+          </nav>
+          <pre class="code-block">
+            <code>
+&lt;nav class=&quot;nav&quot;&gt;
+  &lt;div class=&quot;nav__brand&quot;&gt;
+    &lt;h2 class=&quot;brand__text&quot;&gt;Ano Sushi&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;nav__pages&quot;&gt;
+    &lt;a href=&quot;/&quot; class=&quot;nav__link active&quot;&gt;Style Guide&lt;/a&gt;
+    &lt;a href=&quot;/product.html&quot; class=&quot;nav__link&quot;&gt;Product&lt;/a&gt;
+    &lt;a href=&quot;/checkout.html&quot; class=&quot;nav__link&quot;&gt;Cart&lt;/a&gt;
+    &lt;svg viewBox=&quot;64 64 896 896&quot; focusable=&quot;false&quot; class=&quot;icon&quot;&gt;
+      &lt;path
+        d=&quot;M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z&quot;
+      /&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hamburger-menu&quot;&gt;
+    &lt;div class=&quot;menu-bar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;menu-bar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;menu-bar&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="product">
+          <h1 class="title">Product</h1>
+          <div class="product-grid">
+            <article class="product">
+              <img
+                src="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
+                alt="dynamite roll"
+                width="200"
+                class="product__img"
+              />
+              <div class="product__info">
+                <h3 class="product__name">Dynamite Roll</h3>
+                <p class="product__description">Avacado, Tempura, Masago</p>
+                <div class="product__bottom">
+                  <span class="product__price">4.95</span>
+                  <button class="btn btn-submit">Add</button>
+                </div>
+              </div>
+            </article>
+            <article class="product">
+              <img
+                src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
+                alt="california roll"
+                width="200"
+                class="product__img"
+              />
+              <div class="product__info">
+                <h3 class="product__name">California Roll</h3>
+                <p class="product__description">Crab Meat, Avocado, Mayo</p>
+                <div class="product__bottom">
+                  <span class="product__price">4.95</span>
+                  <button class="btn btn-submit">Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <pre class="code-block">
+            <code>
+&lt;div class=&quot;product-grid&quot;&gt;
+  &lt;article class=&quot;product&quot;&gt;
+    &lt;img
+      src=&quot;https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg&quot;
+      alt=&quot;dynamite roll&quot;
+      width=&quot;200&quot;
+      class=&quot;product__img&quot;
+    /&gt;
+    &lt;div class=&quot;product__info&quot;&gt;
+      &lt;h3 class=&quot;product__name&quot;&gt;Dynamite Roll&lt;/h3&gt;
+      &lt;p class=&quot;product__description&quot;&gt;Avacado, Tempura, Masago&lt;/p&gt;
+      &lt;div class=&quot;product__bottom&quot;&gt;
+        &lt;span class=&quot;product__price&quot;&gt;4.95&lt;/span&gt;
+        &lt;button class=&quot;btn btn-submit&quot;&gt;Add&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="payment">
+          <h1 class="title">Payment Form</h1>
+          <form class="payment-form">
+            <h3>Payment Information</h3>
+            <div class="form-group">
+              <label class="form-label">Name on card</label>
+              <input type="email" class="text-input" placeholder="Jane Doe" />
+            </div>
+            <div class="card-credentials">
+              <div class="form-group mt-1 card-number-group">
+                <label for="card-number" class="form-label">Card number</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  class="text-input"
+                  placeholder="0123XXXXXXXXXX"
+                />
+              </div>
+              <div class="form-group mt-1 cvv-number-group">
+                <label for="cvv-number" class="form-label">CVV</label>
+                <input
+                  type="text"
+                  id="cvv-number"
+                  class="text-input"
+                  placeholder="XXX"
+                />
+              </div>
+            </div>
+            <div class="card-expiry mt-1">
+              <div class="form-group card-exp-month">
+                <label for="exp-month" class="form-label">Expiration</label>
+                <input
+                  type="text"
+                  id="exp-month"
+                  class="text-input"
+                  placeholder="MM"
+                />
+              </div>
+              <div class="form-group card-exp-year">
+                <input
+                  type="text"
+                  id="exp-year"
+                  class="text-input"
+                  placeholder="YY"
+                />
+              </div>
+            </div>
+            <div class="payment-form__bottom">
+              <img
+                src="https://help.zazzle.com/hc/article_attachments/360010513393/Logos-01.png"
+                alt="Accepted payments"
+                class="accepted-payments"
+              />
+              <button class="btn btn-submit">Finalize Order</button>
+            </div>
+          </form>
+          <pre class="code-block">
+            <code>
+  &lt;form class=&quot;payment-form&quot;&gt;
+    &lt;h3&gt;Payment Information&lt;/h3&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label for=&quot;email&quot; class=&quot;form-label&quot;&gt;Name on card&lt;/label&gt;
+      &lt;input
+        type=&quot;text&quot;
+        id=&quot;email&quot;
+        class=&quot;text-input&quot;
+        placeholder=&quot;Jane Doe&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-credentials&quot;&gt;
+      &lt;div class=&quot;form-group mt-1 card-number-group&quot;&gt;
+        &lt;label for=&quot;card-number&quot; class=&quot;form-label&quot;&gt;Card number&lt;/label&gt;
+        &lt;input
+          type=&quot;text&quot;
+          id=&quot;card-number&quot;
+          class=&quot;text-input&quot;
+          placeholder=&quot;0123XXXXXXXXXX&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group mt-1 cvv-number-group&quot;&gt;
+        &lt;label for=&quot;cvv-number&quot; class=&quot;form-label&quot;&gt;CVV&lt;/label&gt;
+        &lt;input
+          type=&quot;text&quot;
+          id=&quot;cvv-number&quot;
+          class=&quot;text-input&quot;
+          placeholder=&quot;XXX&quot;
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-expiry mt-1&quot;&gt;
+      &lt;div class=&quot;form-group card-exp-month&quot;&gt;
+        &lt;label for=&quot;exp-month&quot; class=&quot;form-label&quot;&gt;Expiration&lt;/label&gt;
+        &lt;input
+          type=&quot;text&quot;
+          id=&quot;exp-month&quot;
+          class=&quot;text-input&quot;
+          placeholder=&quot;MM&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group card-exp-year&quot;&gt;
+        &lt;input
+          type=&quot;text&quot;
+          id=&quot;exp-year&quot;
+          class=&quot;text-input&quot;
+          placeholder=&quot;YY&quot;
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;payment-form__bottom&quot;&gt;
+      &lt;img
+        src=&quot;https://help.zazzle.com/hc/article_attachments/360010513393/Logos-01.png&quot;
+        alt=&quot;Accepted payments&quot;
+        class=&quot;accepted-payments&quot;
+      /&gt;
+      &lt;button class=&quot;btn btn-submit&quot;&gt;Finalize Order&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="checkout">
+          <h1 class="title">Checkout Cart</h1>
+          <div class="cart-container">
+            <article class="cart-item">
+              <img
+                src="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
+                alt=""
+                class="cart-item__img"
+              />
+              <div class="cart__product-info">
+                <h3 class="cart__product-name">Dynamite Roll</h3>
+                <p class="cart__product-desc">Avacado, Tempura, Masago</p>
+              </div>
+              <div class="quantity-price-container">
+                <div class="quantity-selector">
+                  <button class="quantity__btn">-</button>
+                  <span class="quantity__count">1</span>
+                  <button class="quantity__btn">+</button>
+                </div>
+                <span class="cart-item__subtotal">4.95</span>
+              </div>
+              <a href="" class="link">remove</a>
+            </article>
+            <article class="cart-item">
+              <img
+                src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
+                alt=""
+                class="cart-item__img"
+              />
+              <div class="cart__product-info">
+                <h3 class="cart__product-name">California Roll</h3>
+                <p class="cart__product-desc">
+                  Imitation Crab Meat, Avacado, Mayo
+                </p>
+              </div>
+              <div class="quantity-price-container">
+                <div class="quantity-selector">
+                  <button class="quantity__btn">-</button>
+                  <span class="quantity__count">2</span>
+                  <button class="quantity__btn">+</button>
+                </div>
+                <span class="cart-item__subtotal">7.90</span>
+              </div>
+              <a href="" class="link">remove</a>
+            </article>
+          </div>
+          <pre class="code-block">
+            <code>
+&lt;div class=&quot;cart-container&quot;&gt;
+  &lt;article class=&quot;cart-item&quot;&gt;
+    &lt;img
+      src=&quot;https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg&quot;
+      alt=&quot;&quot;
+      class=&quot;cart-item__img&quot;
+    /&gt;
+    &lt;div class=&quot;cart__product-info&quot;&gt;
+      &lt;h3 class=&quot;cart__product-name&quot;&gt;Dynamite Roll&lt;/h3&gt;
+      &lt;p class=&quot;cart__product-desc&quot;&gt;Avacado, Tempura, Masago&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;quantity-selector&quot;&gt;
+      &lt;button class=&quot;quantity__btn&quot;&gt;-&lt;/button&gt;
+      &lt;span class=&quot;quantity__count&quot;&gt;1&lt;/span&gt;
+      &lt;button class=&quot;quantity__btn&quot;&gt;+&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;cart-item__subtotal&quot;&gt;4.95&lt;/span&gt;
+    &lt;a href=&quot;&quot; class=&quot;link&quot;&gt;remove&lt;/a&gt;
+  &lt;/article&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="footer">
+          <h1 class="title">Footer</h1>
+          <footer class="footer">
+            <section class="footer__section">
+              <h6 class="footer__title">Explore</h6>
+              <a href="/" class="footer__link">Style Guide</a>
+              <a href="/product" class="footer__link">Proudcts Template</a>
+              <a href="/checkout" class="footer__link">Checkout Template</a>
+            </section>
+            <section class="footer__section">
+              <h6 class="footer__title">Social media</h6>
+              <a href="#" class="footer__link">Instagram</a>
+              <a href="#" class="footer__link">Twitter</a>
+              <a href="#" class="footer__link">Facebook</a>
+            </section>
+            <section class="footer__section">
+              <h6 class="footer__title">Privacy</h6>
+              <a href="#" class="footer__link">Legal</a>
+            </section>
+            <section class="footer__section">
+              <h6 class="footer__title">
+                ©2021 Raymond Eng. All rights reserved.
+              </h6>
+            </section>
+          </footer>
+          <pre class="code-block">
+            <code>
+&lt;footer class=&quot;footer&quot;&gt;
+  &lt;section class=&quot;footer__section&quot;&gt;
+    &lt;span class=&quot;footer__title&quot;&gt;Explore&lt;/span&gt;
+    &lt;a href=&quot;/&quot; class=&quot;footer__link&quot;&gt;Style Guide&lt;/a&gt;
+    &lt;a href=&quot;/product&quot; class=&quot;footer__link&quot;&gt;Proudcts Template&lt;/a&gt;
+    &lt;a href=&quot;/checkout&quot; class=&quot;footer__link&quot;&gt;Checkout Template&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;footer__section&quot;&gt;
+    &lt;span class=&quot;footer__title&quot;&gt;Social media&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Instagram&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Twitter&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Facebook&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;footer__section&quot;&gt;
+    &lt;span class=&quot;footer__title&quot;&gt;Privacy&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Legal&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;footer__section&quot;&gt;
+    &lt;span class=&quot;footer__title&quot;
+      &gt;©2021 Raymond Eng. All rights reserved.&lt;/span
+    &gt;
+  &lt;/section&gt;
+&lt;/footer&gt;
+            </code>
+          </pre>
+        </section>
+        <section id="branding">
+          <h1 class="title">Branding</h1>
+          <h3>Company</h3>
+          <p>
+            Ano Sushi is committed to serving quality sushi in the lower
+            mainland. Our restaurants feature conveyer belt styled self
+            service—perfect for the casual yet exciting dining experience.
+          </p>
+          <h3>Customers</h3>
+          <p>
+            The target audience of our restaurants are young millennials looking
+            for a convient dinning experience. These customers enjoy using
+            technology to streamline their experience. Whether that may be
+            picking up or making reservations through the restaurant's app.
+            Additionally, these customers are enticed by unique dining
+            experiences like the self-service conveyer belt style we offer.
+            These options of fast casual dining mesh well with this generation's
+            preferences. They care about locally and sustainable food. But over
+            all else, they love sushi.
+          </p>
+          <h3>Fonts</h3>
+          <p>
+            The primary typeface of Ano Sushi is <b>Cabin</b>. Headings use 400
+            weight. Paragraphs use 300 weight.
+          </p>
+          <h3>Colors</h3>
+          <div class="color-swatches">
+            <div class="color-swatch">
+              <div class="color-swatch__color bg-primary"></div>
+              <span class="color-swatch__hex">Primary #8aec6f</span>
+            </div>
+            <div class="color-swatch">
+              <div class="color-swatch__color bg-secondary"></div>
+              <span class="color-swatch__hex">Secondary #ef832b</span>
+            </div>
+            <div class="color-swatch">
+              <div class="color-swatch__color bg-gray500"></div>
+              <span class="color-swatch__hex">Gray 500 #808080</span>
+            </div>
+          </div>
+          <h3>Art Direction</h3>
+          <p>
+            Ano Sushi's art direction features flat design with clear and bold
+            type hierarchy. The colours and styling embodies a causal and modern
+            tone — well fitted to the casual dinning experience of Ano Sushi.
+            Shadows are soft and corners are rounded. Photography features
+            brightly lit, uplifting images.
+          </p>
+          <figure class="figure">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9acfdb90542827.5e1a179c0c361.jpg"
+              alt="doordash food icons"
+              class="img-500"
+            />
+            <figcaption class="figcaption">Doordash food icons</figcaption>
+          </figure>
+          <figure class="figure">
+            <img
+              src="https://gw.alipayobjects.com/zos/rmsportal/XzOPonWCsPjvgkrklCzo.png"
+              alt="Ant Design Icons"
+              class="img-500"
+            />
+            <figcaption class="figcaption">Ant Design icons</figcaption>
+          </figure>
+          <p>
+            Ant Design Icon Set was chosen for its flat and minimal iconography.
+          </p>
+          <figure class="figure mt-1">
+            <img
+              src="https://cdn.dribbble.com/users/5121212/screenshots/14751889/media/c150cefce3e52e289bbca3db8c1a3f05.jpg?compress=1&resize=800x600"
+              alt="3d Sushi Illustration"
+              class="img-500"
+            />
+          </figure>
+        </section>
+        <section id="citations" class="citations">
+          <h1 class="title">Citations</h1>
+          <h3>Images</h3>
+          <a
+            class="link"
+            href="https://help.zazzle.com/hc/en-us/articles/220639167-What-Payment-Methods-Are-Accepted-on-Zazzle-"
+            >Accepted Payments - Zazzle</a
+          >
+          <a
+            href="https://www.behance.net/gallery/90542827/App-Icons-DoorDash"
+            class="link"
+            >Doordash icons - Marie-Christine Gervais</a
+          >
+          <a
+            href="https://gw.alipayobjects.com/zos/rmsportal/XzOPonWCsPjvgkrklCzo.png"
+            class="link"
+            >Ant Design Icons</a
+          >
+          <a
+            href="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
+            class="link"
+            >Dynamite Roll Image</a
+          >
+          <a
+            href="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
+            class="link"
+            >California Roll Image</a
+          >
+          <a
+            href="https://di-cdn.sfo2.digitaloceanspaces.com/cdn/533_b77eacd421e0674ea3e49a6f7917597d.jpg"
+            class="link"
+            >Kappa Roll Image</a
+          >
+          <a
+            href="https://i.pinimg.com/originals/f9/2b/73/f92b735daa8599dba0c36b507aa768af.jpg"
+            class="link"
+            >Tuna Roll Image</a
+          >
+          <a
+            href="https://www.flaticon.com/free-icon/truck_565391?term=truck&page=1&position=15&page=1&position=15&related_id=565391&origin=search"
+            class="link"
+            >Truck icon - Flaticon</a
+          >
+          <h3>Reference</h3>
+          <a
+            href="https://css-tricks.com/snippets/css/css-triangle/"
+            class="link"
+            >CSS Triangle - CSS Tricks</a
+          >
+          <a href="https://stackoverflow.com/questions/44446671" class="link"
+            >Sticky Flexbox Fix - Stackoverflow-BHOLT</a
+          >
+          <a href="https://www.w3schools.com/" class="link"
+            >CSS reference - w3schools</a
+          >
+          <a
+            href="https://emn178.github.io/online-tools/html_encode.html"
+            class="link"
+            >HTML encoder - emn178</a
+          >
+          <a href="http://getbem.com/naming/" class="link"
+            >BEM naming convention</a
+          >
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
