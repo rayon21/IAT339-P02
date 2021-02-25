@@ -183,6 +183,18 @@ main {
   color: white;
 }
 
+.imglink{
+  padding: 0.5rem;
+  border-color: #569444 ; 
+  border-width: thick;
+  border-style:double;
+}
+.imglink:hover, .imglink:focus{
+  border-color:  #ef832b;
+  transition-property: border-color;
+  transition-duration: 0.3s;
+}
+
 .nav {
   height: 4rem;
   display: flex;
