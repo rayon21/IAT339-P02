@@ -183,18 +183,19 @@ main {
   color: white;
 }
 
-.imglink{
-    border-top-left-radius: var(--border-radius-product);
+.imglink {
+  border-top-left-radius: var(--border-radius-product);
   border-top-right-radius: var(--border-radius-product);
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-color: #569444 ; 
+  border-color: #569444;
   border-width: thick;
-  border-style:double;
+  border-style: double;
 }
-.imglink:hover, .imglink:focus{
-  border-color:  #ef832b;
+.imglink:hover,
+.imglink:focus {
+  border-color: #ef832b;
   transition-property: border-color;
   transition-duration: 0.3s;
 }
@@ -604,4 +605,9 @@ main {
   text-transform: uppercase;
   font-size: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.nav-brand__link {
+  text-decoration: none;
+  color: #262626;
 }
