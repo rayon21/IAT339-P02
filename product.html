@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ano Sushi - Product Template</title>
+    <title>Ano Sushi - California Roll</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/product-detail.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap"
@@ -14,18 +16,22 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__brand">
-        <h2 class="brand__text">Ano Sushi</h2>
-      </div>
+      <a href="./" class="nav-brand__link">
+        <div class="nav__brand">
+          <h2 class="brand__text">Ano Sushi</h2>
+        </div>
+      </a>
       <div class="nav__pages">
-        <a href="./" class="nav__link">Style Guide</a>
-        <a href="./product.html" class="nav__link active">Product</a>
-        <a href="./checkout.html" class="nav__link">Cart</a>
-        <svg viewBox="64 64 896 896" focusable="false" class="icon">
-          <path
-            d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z"
-          />
-        </svg>
+        <a href="./" class="nav__link">Menu</a>
+        <a href="./company.html" class="nav__link">About Us</a>
+        <a href="./style-guide.html" class="nav__link">Style Guide</a>
+        <a href="./checkout.html" class="nav__link active">
+          <svg viewBox="64 64 896 896" focusable="false" class="icon">
+            <path
+              d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z"
+            />
+          </svg>
+        </a>
       </div>
       <div class="hamburger-menu">
         <div class="menu-bar"></div>
@@ -34,80 +40,145 @@
       </div>
     </nav>
     <div class="container">
-      <h1>Menu</h1>
-      <div class="product-grid">
-        <article class="product">
-          <img
-            src="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
-            alt="dynamite roll"
-            width="200"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">Dynamite Roll</h3>
-            <p class="product__description">Avacado, Tempura, Masago</p>
-            <div class="product__bottom">
-              <span class="product__price">4.95</span>
-              <button class="btn btn-submit">Add</button>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <img
-            src="https://di-cdn.sfo2.digitaloceanspaces.com/cdn/533_b77eacd421e0674ea3e49a6f7917597d.jpg"
-            alt="dynamite roll"
-            width="200"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">Kappa Roll</h3>
-            <p class="product__description">Cucumber</p>
-            <div class="product__bottom">
-              <span class="product__price">2.95</span>
-              <button class="btn btn-submit">Add</button>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <img
-            src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
-            alt="california roll"
-            width="200"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">California Roll</h3>
-            <p class="product__description">Crab Meat, Avocado, Mayo</p>
-            <div class="product__bottom">
-              <span class="product__price">4.95</span>
-              <button class="btn btn-submit">Add</button>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <img
-            src="https://i.pinimg.com/originals/f9/2b/73/f92b735daa8599dba0c36b507aa768af.jpg"
-            alt="tuna roll"
-            width="200"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">Tuna Roll</h3>
-            <p class="product__description">Tuna</p>
-            <div class="product__bottom">
-              <span class="product__price">3.95</span>
-              <button class="btn btn-submit">Add</button>
-            </div>
-          </div>
-        </article>
+      <!-- INSERT CONTENT HERE -->
+      <div class="detail__container">
+        <img
+          src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
+          alt="california roll"
+          class="detail__image"
+        />
+        <div class="detail__info">
+          <h1 class="product__name">California Roll</h1>
+          <span class="detail__price">C$4.95</span>
+          <p class="detail__description">Avocado</p>
+          <button class="btn btn-submit w-100 mt-5">Add to Cart</button>
+        </div>
       </div>
+      <section>
+        <h3>Customer Reviews</h3>
+        <article class="product__feedback">
+          <h4>Bobby Jones</h4>
+          <span>March 3, 2021</span>
+          <div class="product__rating">
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --primary-fill"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --primary-fill"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --primary-fill"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --primary-fill"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg viewBox="64 64 896 896" focusable="false" class="smile-icon">
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed arcu
+            non odio euismod. Tincidunt id aliquet risus feugiat in ante metus
+            dictum at. Risus commodo viverra maecenas accumsan lacus vel
+            facilisis.
+          </p>
+        </article>
+        <a href="#" class="link">See all reviews ></a>
+        <form action="" class="feedback__form">
+          <h3>Add your feedback</h3>
+          <div class="product__rating">
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --rating-hover"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --rating-hover"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --rating-hover"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --rating-hover"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              class="smile-icon --rating-hover"
+            >
+              <path
+                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zM288 421a48.01 48.01 0 0196 0 48.01 48.01 0 01-96 0zm224 272c-85.5 0-155.6-67.3-160-151.6a8 8 0 018-8.4h48.1c4.2 0 7.8 3.2 8.1 7.4C420 589.9 461.5 629 512 629s92.1-39.1 95.8-88.6c.3-4.2 3.9-7.4 8.1-7.4H664a8 8 0 018 8.4C667.6 625.7 597.5 693 512 693zm176-224a48.01 48.01 0 010-96 48.01 48.01 0 010 96z"
+              />
+            </svg>
+          </div>
+          <div class="form-group mt-1">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="text-input" id="name" />
+          </div>
+          <div class="form-group mt-1">
+            <label for="feedback-comment" class="form-label">Comment</label>
+            <input type="text" class="text-input" id="feedback-comment" />
+          </div>
+          <button class="btn btn-submit mt-1">Submit Review</button>
+        </form>
+      </section>
     </div>
     <footer class="footer">
       <section class="footer__section">
         <h6 class="footer__title">Explore</h6>
-        <a href="/" class="footer__link">Style Guide</a>
-        <a href="/product" class="footer__link">Proudcts Template</a>
-        <a href="/checkout" class="footer__link">Checkout Template</a>
+        <a href="./style-guide" class="footer__link">Style Guide</a>
+        <a href="./" class="footer__link">Multi-Product Template</a>
+        <a href="./product" class="footer__link">Proudct Template</a>
+        <a href="./checkout" class="footer__link">Checkout Template</a>
       </section>
       <section class="footer__section">
         <h6 class="footer__title">Social media</h6>
@@ -120,7 +191,9 @@
         <a href="#" class="footer__link">Legal</a>
       </section>
       <section class="footer__section">
-        <h6 class="footer__title">©2021 Raymond Eng. All rights reserved.</h6>
+        <h6 class="footer__title">
+          ©2021 Raymond Eng & Supriya Bhasin. All rights reserved.
+        </h6>
       </section>
     </footer>
   </body>
