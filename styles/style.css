@@ -50,6 +50,11 @@ section {
 }
 
 /* UTIL */
+
+.w-100 {
+  width: 100%;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -610,4 +615,51 @@ main {
 .nav-brand__link {
   text-decoration: none;
   color: #262626;
+}
+
+/* PRODUCT DETAIL */
+.detail__container {
+  display: flex;
+}
+
+.detail__price {
+  font-size: 1.4rem;
+}
+
+.detail__description {
+  color: var(--gray500);
+}
+
+.detail__image {
+  width: 20%;
+  margin-right: 2rem;
+}
+
+.product__feedback {
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray300);
+}
+
+.product__rating {
+  margin-top: 1rem;
+}
+
+.smile-icon {
+  width: 1.6rem;
+  fill: var(--gray300);
+  margin-right: 0.3rem;
+}
+
+.--rating-hover:hover {
+  fill: var(--primary);
+  cursor: pointer;
+}
+
+.--primary-fill {
+  fill: var(--primary);
+}
+
+.feedback__form {
+  margin-top: 2rem;
+  border-radius: 4px;
 }
