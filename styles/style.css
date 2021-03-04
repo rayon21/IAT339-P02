@@ -695,3 +695,14 @@ main {
   margin: 0;
   display: inline-block;
 }
+
+/* NEWS ARITCLES */
+.--dflex-inbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news__date {
+  color: var(--gray500);
+}
