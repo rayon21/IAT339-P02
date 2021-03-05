@@ -706,3 +706,14 @@ main {
 .news__date {
   color: var(--gray500);
 }
+
+@media only screen and (max-width: 700px) {
+  .detail__container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .detail__info {
+    margin-top: 2rem;
+  }
+}
