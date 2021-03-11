@@ -703,11 +703,9 @@ main {
   }
 
 .contact-us__map{
-    max-width: 600;
-    height:450;
+    max-width: 600px;
+    height:450px;
     border:0;
-    loading:lazy;
-    
 }
 
 /* NEWS ARITCLES */
