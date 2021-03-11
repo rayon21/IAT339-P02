@@ -717,3 +717,16 @@ main {
     margin-top: 2rem;
   }
 }
+
+.hero-header {
+  background-color: #f2feff;
+  padding: 4rem 4rem;
+  position: relative;
+}
+
+.hero__image {
+  position: absolute;
+  width: 20rem;
+  top: 2rem;
+  right: 2rem;
+}
