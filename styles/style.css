@@ -702,6 +702,14 @@ main {
   margin: 0;
   }
 
+.contact-us__map{
+    max-width: 600;
+    height:450;
+    border:0;
+    loading:lazy;
+    
+}
+
 /* NEWS ARITCLES */
 .--dflex-inbetween {
   display: flex;
