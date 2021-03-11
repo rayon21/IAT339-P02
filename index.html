@@ -20,10 +20,10 @@
         </div>
       </a>
       <div class="nav__pages">
-        <a href="./" class="nav__link">Menu</a>
+        <a href="./" class="nav__link active">Menu</a>
         <a href="./company.html" class="nav__link">About Us</a>
         <a href="./style-guide.html" class="nav__link">Style Guide</a>
-        <a href="./checkout.html" class="nav__link active">
+        <a href="./checkout.html" class="nav__link">
           <svg viewBox="64 64 896 896" focusable="false" class="icon">
             <path
               d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-208 0H400v-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16z"
@@ -40,7 +40,9 @@
     <header class="hero-header">
       <h1>Quality sushi at your convenience</h1>
       <p>Order now and choose from delivery or pickup</p>
-      <button class="btn btn-submit mt-1">Order Now</button>
+      <a href="#menu">
+        <button class="btn btn-submit mt-1">Order Now</button>
+      </a>
       <img
         src="https://www.pinclipart.com/picdir/big/320-3209283_stickers-aesthetic-sushi-png-clipart.png"
         alt="cartoon image of sushi"
@@ -48,73 +50,87 @@
       />
     </header>
     <div class="container">
-      <h1>Menu</h1>
-      <div class="product-grid">
-        <article class="product">
-          <img
-            src="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
-            alt="dynamite roll"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">Dynamite Roll</h3>
-            <p class="product__description">Avacado, Tempura, Masago</p>
-            <div class="product__bottom">
-              <span class="product__price">4.95</span>
-              <button class="btn btn-submit">Add</button>
+      <section id="menu">
+        <h1>Menu</h1>
+        <div class="product-grid">
+          <article class="product">
+            <a href="./product2.html">
+              <img
+                src="https://di-cdn.sfo2.digitaloceanspaces.com/product_images/5/533_4c6b1844915d6f62f4af80a44f180e9e.jpg"
+                alt="dynamite roll"
+                class="product__img"
+              />
+            </a>
+            <div class="product__info">
+              <h3 class="product__name">Dynamite Roll</h3>
+              <p class="product__description">Avacado, Tempura, Masago</p>
+              <div class="product__bottom">
+                <span class="product__price">4.95</span>
+                <a href="./product2.html"
+                  ><button class="btn btn-submit">Add</button></a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="product">
-          <img
-            src="https://di-cdn.sfo2.digitaloceanspaces.com/cdn/533_b77eacd421e0674ea3e49a6f7917597d.jpg"
-            alt="dynamite roll"
-            class="product__img"
-          />
-          <div class="product__info">
-            <h3 class="product__name">Kappa Roll</h3>
-            <p class="product__description">Cucumber</p>
-            <div class="product__bottom">
-              <span class="product__price">2.95</span>
-              <button class="btn btn-submit">Add</button>
+          </article>
+          <article class="product">
+            <a href="./product2.html">
+              <img
+                src="https://di-cdn.sfo2.digitaloceanspaces.com/cdn/533_b77eacd421e0674ea3e49a6f7917597d.jpg"
+                alt="dynamite roll"
+                class="product__img"
+              />
+            </a>
+            <div class="product__info">
+              <h3 class="product__name">Kappa Roll</h3>
+              <p class="product__description">Cucumber</p>
+              <div class="product__bottom">
+                <span class="product__price">2.95</span>
+                <a href="./product2.html"
+                  ><button class="btn btn-submit">Add</button></a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="product">
-          <a href="./product.html">
-            <img
-              src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
-              alt="california roll"
-              class="product__img"
-            />
-          </a>
-          <div class="product__info">
-            <h3 class="product__name">California Roll</h3>
-            <p class="product__description">Crab Meat, Avocado, Mayo</p>
-            <div class="product__bottom">
-              <span class="product__price">4.95</span>
-              <button class="btn btn-submit">Add</button>
+          </article>
+          <article class="product">
+            <a href="./product.html">
+              <img
+                src="https://www.yummyhealthyeasy.com/wp-content/uploads/2018/04/california-sushi-rolls-4.jpg"
+                alt="california roll"
+                class="product__img"
+              />
+            </a>
+            <div class="product__info">
+              <h3 class="product__name">California Roll</h3>
+              <p class="product__description">Crab Meat, Avocado, Mayo</p>
+              <div class="product__bottom">
+                <span class="product__price">4.95</span>
+                <a href="./product.html"
+                  ><button class="btn btn-submit">Add</button></a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="product">
-          <a href="./product.html">
-            <img
-              src="https://i.pinimg.com/originals/f9/2b/73/f92b735daa8599dba0c36b507aa768af.jpg"
-              alt="tuna roll"
-              class="product__img"
-            />
-          </a>
-          <div class="product__info">
-            <h3 class="product__name">Tuna Roll</h3>
-            <p class="product__description">Tuna</p>
-            <div class="product__bottom">
-              <span class="product__price">3.95</span>
-              <button class="btn btn-submit">Add</button>
+          </article>
+          <article class="product">
+            <a href="./product.html">
+              <img
+                src="https://i.pinimg.com/originals/f9/2b/73/f92b735daa8599dba0c36b507aa768af.jpg"
+                alt="tuna roll"
+                class="product__img"
+              />
+            </a>
+            <div class="product__info">
+              <h3 class="product__name">Tuna Roll</h3>
+              <p class="product__description">Tuna</p>
+              <div class="product__bottom">
+                <span class="product__price">3.95</span>
+                <a href="./product.html"
+                  ><button class="btn btn-submit">Add</button></a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-      </div>
+          </article>
+        </div>
+      </section>
       <section id="promotions">
         <h1 class="mt-5">Promotions & News 🎉</h1>
         <article class="news__item">

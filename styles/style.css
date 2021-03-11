@@ -19,6 +19,7 @@
 /* https://stackoverflow.com/questions/4086107/ */
 html {
   scroll-padding-left: var(--side-bar-width-default);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -706,6 +707,7 @@ main {
 
 .contact-us__map {
   border: 0;
+  width: 100%;
 }
 
 /* NEWS ARITCLES */
