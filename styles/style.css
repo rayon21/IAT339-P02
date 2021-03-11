@@ -693,8 +693,14 @@ main {
 .contact-us__info {
   padding: 1rem;
   margin: 0;
-  display: inline-block;
 }
+
+.contact-us__infoset {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  }
 
 /* NEWS ARITCLES */
 .--dflex-inbetween {
