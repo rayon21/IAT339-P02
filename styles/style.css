@@ -546,6 +546,7 @@ main {
     width: 100%;
     padding: 1rem;
     z-index: 2;
+    top: 4rem;
   }
 
   .nav__link {
@@ -701,10 +702,10 @@ main {
   align-content: center;
   align-items: center;
   margin: 0;
-  }
+}
 
-.contact-us__map{
-    border:0;
+.contact-us__map {
+  border: 0;
 }
 
 /* NEWS ARITCLES */
