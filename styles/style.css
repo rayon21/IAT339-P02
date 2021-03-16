@@ -137,6 +137,9 @@ main {
 }
 
 .btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
   border: none;
   border-radius: 20px;
   padding: 0.8rem 1.2rem;
