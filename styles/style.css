@@ -222,6 +222,7 @@ main {
 }
 
 .nav__link {
+  text-align: center;
   font-size: 0.8rem;
   color: var(--gray500);
   text-decoration: none;
@@ -252,6 +253,10 @@ main {
 
 .icon:hover {
   cursor: pointer;
+}
+
+.icon__checkout {
+  margin-right: 0.3rem;
 }
 
 .brand__text {
